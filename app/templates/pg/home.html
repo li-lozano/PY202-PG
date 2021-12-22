@@ -1,9 +1,14 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<div class=" mt-8">
-    <form action="">
-        <input type="text" class=" mx-auto w-1/2 text-4xl" name="pass" value="{{password}}">
-    </form>
+<div class="h-28 flex flex-row justify-center items-center mx-auto p-9">
+    <div class=" basis-6/12 ml-9 ">
+        <form >
+        <input type="text" disabled class=" border-b-8 border-gray-400 w-full text-4xl text-center p-4" name="pass" value="{{password}}">        
+        </form>
+    </div>
+    <div class=" mr-9 ">
+        <button class="items-center bg-update-btn bg-contain bg-no-repeat bg-center h-8 w-8 mx-4"></button>
+    </div>
 </div>
 {% endblock %}
